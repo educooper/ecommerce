@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Test</title>
+	<title>{$title}</title>
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
+
+    <!-- if remove_comments is enabled this will disappear -->
 
     {* This is a comment *}
 
@@ -21,6 +23,9 @@
 	Scoping (array) {$week.0} <br><br>
 	Variable as key {$week[$numbers.0]} <br><br>
 	Var test {$variable} <br><br>
+
+    <h2>Ternary Operator</h2>
+    The title is: {isset($title)?"$title":'default title'}
 
 
 	<h2>Loop</h2>
@@ -76,6 +81,11 @@
 
 	<h2>Custom tag 2</h2>
 	{%message to translate|english%} <br><br>
+        
+        <h2>Escape variable</h2>
+        {$bad_variable}
+        {autoescape="off"}{$safe_variable}{/autoescape}
+        
 
 </body>
 </html>
