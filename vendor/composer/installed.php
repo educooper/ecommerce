@@ -3,7 +3,7 @@
         'name' => 'educooper/ecommerce',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '2f1118e35b97b73611fa07a6123d5e7662f55a4b',
+        'reference' => '1240e13d7a7efa8094c19a6ecdaba3e985478f9c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'educooper/ecommerce' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '2f1118e35b97b73611fa07a6123d5e7662f55a4b',
+            'reference' => '1240e13d7a7efa8094c19a6ecdaba3e985478f9c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
