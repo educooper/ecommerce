@@ -51,6 +51,55 @@ $app->get('/admin', function (Request $request, Response $response) use ($render
     ]);
 });
 
+$app->get('/admin/login', function (Request $request, Response $response) use ($renderer) {
+    User::verifyLogin();
+    $page = new PageAdmin();
+    return $renderer->render($response, "index.php", [
+        "page" => $page,
+        "header" => false,
+        "footer" => false 	
+        ]);
+    $page->setTpl("login");
+});
+
+$app->post('/admin/login', function(){
+
+		User::login($_POST["login"], $_POST["password"]);
+		header("Location: /admin");
+		exit;
+
+	});
+
+$app->get('/admin/logout', function(){
+        User::logout();
+        header("location: /admin/login");
+        	exit;
+	});
+
+$app->get('/admin', function (Request $request, Response $response) use ($renderer) {
+    User::verifyLogin();
+    $page = new PageAdmin();
+    return $renderer->render($response, "index.php", [
+        "page" => $page
+    ]);
+});
+
+$app->get('/admin', function (Request $request, Response $response) use ($renderer) {
+    User::verifyLogin();
+    $page = new PageAdmin();
+    return $renderer->render($response, "index.php", [
+        "page" => $page
+    ]);
+});
+
+$app->get('/admin', function (Request $request, Response $response) use ($renderer) {
+    User::verifyLogin();
+    $page = new PageAdmin();
+    return $renderer->render($response, "index.php", [
+        "page" => $page
+    ]);
+});
+
 // Restante das rotas...
 
 $app->run();
