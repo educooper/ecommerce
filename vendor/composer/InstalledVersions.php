@@ -30,7 +30,7 @@ class InstalledVersions
     'aliases' => 
     array (
     ),
-    'reference' => 'c5410c1bcc99c980414dc250de2d2f6242026a3e',
+    'reference' => '323a2bd48e1d4143a0c72f8cb5233ab4a826c4f3',
     'name' => 'educooper/ecommerce',
   ),
   'versions' => 
@@ -51,7 +51,7 @@ class InstalledVersions
       'aliases' => 
       array (
       ),
-      'reference' => 'c5410c1bcc99c980414dc250de2d2f6242026a3e',
+      'reference' => '323a2bd48e1d4143a0c72f8cb5233ab4a826c4f3',
     ),
     'fig/http-message-util' => 
     array (
@@ -223,6 +223,15 @@ class InstalledVersions
       array (
       ),
       'reference' => '120b605dfeb996808c31b6477290a714d356e822',
+    ),
+    'slim/php-view' => 
+    array (
+      'pretty_version' => '3.4.0',
+      'version' => '3.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ef1821663a6a028b9e446e8c6818fd257bf70313',
     ),
     'slim/psr7' => 
     array (
