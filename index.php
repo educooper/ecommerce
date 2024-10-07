@@ -1,17 +1,21 @@
 <?php
 //Conversão de PSR4 para PSR7 com Slim Framework 3+
 
-// 1. Remova a chamada `session_start()`. O PSR-7 não gerencia sessões automaticamente, e é uma boa prática separar a lógica de gerenciamento de sessões do Slim Framework.
+// 1. Remova a chamada `session_start()`. O PSR-7 não gerencia sessões automaticamente, 
+// e é uma boa prática separar a lógica de gerenciamento de sessões do Slim Framework.
 
-// 2. Em vez de utilizar diretamente o Slim Framework para definir rotas, você usará o PSR-7 para manipular as requisições e respostas. O Slim Framework suporta o PSR-7 nativamente, portanto, você ainda pode usar os recursos do framework.
+// 2. Em vez de utilizar diretamente o Slim Framework para definir rotas, você usará o PSR-7 para manipular as requisições e respostas. 
+// O Slim Framework suporta o PSR-7 nativamente, portanto, você ainda pode usar os recursos do framework.
 
 // 3. Adicione a biblioteca do Slim PSR-7 ao seu projeto. 
 // Você pode fazer isso através do Composer com o seguinte comando:
 // composer require slim/psr7
 // 4. Refatore as rotas para usar as interfaces PSR-7 `ServerRequestInterface` e `ResponseInterface`. 
-// Utilize a injeção de dependência para obter as informações da requisição (`ServerRequestInterface`) e gerar a resposta (`ResponseInterface`).
+// Utilize a injeção de dependência para obter as informações da requisição (`ServerRequestInterface`) 
+//e gerar a resposta (`ResponseInterface`).
 
-// Observe que, nas rotas, utilizamos a injeção de dependência para obter os objetos `Request` e `Response`, permitindo a manipulação das requisições e respostas de acordo com o PSR-7.
+// Observe que, nas rotas, utilizamos a injeção de dependência para obter os objetos `Request` e `Response`, 
+// permitindo a manipulação das requisições e respostas de acordo com o PSR-7.
 
 // Além disso, criamos uma instância do `PhpRenderer` para gerenciar as views e renderizar os templates.
 

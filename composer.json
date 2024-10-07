@@ -6,16 +6,31 @@
             "email": "suporte@hcode.com.br"
         }
     ],
+    "description": "Projeto HCODE criado em php7 e atualizado para php 8.1",
     "require": {
+        "php": "^8.3",
+        "symfony/console": "^6.0",
+        "symfony/http-foundation": "^6.0",
+        "symfony/monolog-bundle": "^3.10",
     	"phpmailer/phpmailer": "^6.5",
-    	"slim/slim": "^4.13.0",
-        "slim/psr7": "^1.6.1",
+    	"slim/slim": "^4.14.0",
+        "slim/psr7": "^1.7",
     	"rain/raintpl": "^3.1.1",
-        "almasaeed2010/adminlte": "^3.2.0"
+        "almasaeed2010/adminlte": "^3.2.0",
+        "nyholm/psr7": "^1.8"
     },
     "autoload": {
         "psr-7": {
             "Hcode\\": "vendor\\hcodebr\\php-classes\\src"
         }
-    }
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^7.1"
+    },
+    "extra": {
+      "symfony": {
+          "allow-contrib": false,
+          "require": "^7.0"
+      }
+  }    
 }
