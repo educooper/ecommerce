@@ -3,7 +3,7 @@
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
         'aliases' => array(),
-        'reference' => 'cb9cbb87a5c826d0ea5a9cbef8fa21849875eacf',
+        'reference' => 'c5410c1bcc99c980414dc250de2d2f6242026a3e',
         'name' => 'educooper/ecommerce',
     ),
     'versions' => array(
@@ -17,7 +17,7 @@
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
             'aliases' => array(),
-            'reference' => 'cb9cbb87a5c826d0ea5a9cbef8fa21849875eacf',
+            'reference' => 'c5410c1bcc99c980414dc250de2d2f6242026a3e',
         ),
         'fig/http-message-util' => array(
             'pretty_version' => '1.1.5',

@@ -30,7 +30,7 @@ class InstalledVersions
     'aliases' => 
     array (
     ),
-    'reference' => 'cb9cbb87a5c826d0ea5a9cbef8fa21849875eacf',
+    'reference' => 'c5410c1bcc99c980414dc250de2d2f6242026a3e',
     'name' => 'educooper/ecommerce',
   ),
   'versions' => 
@@ -51,7 +51,7 @@ class InstalledVersions
       'aliases' => 
       array (
       ),
-      'reference' => 'cb9cbb87a5c826d0ea5a9cbef8fa21849875eacf',
+      'reference' => 'c5410c1bcc99c980414dc250de2d2f6242026a3e',
     ),
     'fig/http-message-util' => 
     array (
